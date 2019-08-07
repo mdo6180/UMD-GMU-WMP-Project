@@ -1,5 +1,8 @@
 # debugger files for Xcode
 debugger_OSX/
 
+# remove pycache
+python/__pycache__/
+
 # remove main.dYSM
 bin/main.dSYM/
