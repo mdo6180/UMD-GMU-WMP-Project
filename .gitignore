@@ -1,3 +1,5 @@
 # debugger files for Xcode
 debugger_OSX/
 
+# remove main.dYSM
+bin/main.dYSM/
