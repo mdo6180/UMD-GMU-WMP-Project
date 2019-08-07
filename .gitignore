@@ -1,29 +1,3 @@
 # debugger files for Xcode
 debugger_OSX/
 
-# ignore files in folder obj
-obj/*
-
-# but keep the folder obj
-!obj/.keep
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
-
