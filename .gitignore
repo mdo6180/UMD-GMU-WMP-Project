@@ -1,10 +1,11 @@
 # debugger files for Xcode
 debugger_OSX/
 
-# compiled object files
-*.slo
-*.lo
-*.o
+# ignore files in folder obj
+obj/*
+
+# but keep the folder obj
+!obj/.keep
 
 # Compiled Dynamic libraries
 *.so
