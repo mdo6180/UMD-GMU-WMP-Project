@@ -1,3 +1,8 @@
+Clone repository off of GitHub
+$ git clone https://github.com/mdo6180/UMD-GMU-WMP-Project
+$ make cleanall
+$ make all
+
 To save model in python...
 
 1. Use the command keras.model.save(<name of file>.h5) to save the entire model as an HDF5 file
