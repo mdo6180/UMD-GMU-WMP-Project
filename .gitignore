@@ -2,4 +2,4 @@
 debugger_OSX/
 
 # remove main.dYSM
-bin/main.dYSM/
+bin/main.dSYM/
