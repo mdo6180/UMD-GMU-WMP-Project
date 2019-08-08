@@ -16,6 +16,10 @@ int main(){
 	//double result = predict(1.483887, 1.865988, 2.234620, 1.018782, -2.530891, -1.604642, 0.774676, -0.465148, -0.495225);
     double result = predict(features);
 	std::cout << "result is " << result << std::endl;
+    //cleanup();
+    
+    double answer = predict(features);
+    std::cout << "answer is " << answer << std::endl;
     cleanup();
     
 	return 0;

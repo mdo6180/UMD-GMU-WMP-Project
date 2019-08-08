@@ -4,16 +4,16 @@ import os
 
 filename = 'mpg.h5'
 
+dir = os.path.dirname(os.path.realpath(__file__))   # get the python directory
+path = dir + '/' + filename                         # create filepath
+# print(path)
+
+model = keras.models.load_model(filepath=path)      # load the HDF5 model (remember to add the full path to the file)
+# print("model loaded")
+
 def predict_result(input):
     # print(type(input))
-    
-    dir = os.path.dirname(os.path.realpath(__file__))   # get the python directory
-    path = dir + '/' + filename                         # create filepath
-    # print(path)
-    
-    model = keras.models.load_model(filepath=path)      # load the HDF5 model (remember to add the full path to the file)
-    # print("model loaded")
-    
+ 
     input_arr = np.asarray(input).reshape((1,9))        # reshape the input tuple
     # print("input successfully reshaped")
     

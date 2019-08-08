@@ -60,7 +60,7 @@ double predict(std::vector<double>& args){
 }
 
 // frees the PyObject* variables
-// must be called immediately after calling predict(std::vector<double>& args) otherwise you will get memory leaks
+// must be called after all predict(std::vector<double>& args) commands otherwise you will get memory leaks
 void cleanup(){
     
     // the function will keep on decrementing the reference count for each variable (declared up top) until all varibles' reference count reaches 0
