@@ -9,14 +9,13 @@ def predict_result(input):
     
     dir = os.path.dirname(os.path.realpath(__file__))   # get the python directory
     path = dir + '/' + filename                         # create filepath
-    
     # print(path)
-    
-    input_arr = np.asarray(input).reshape((1,9))        # reshape the input tuple
-    # print("input successfully reshaped")
     
     model = keras.models.load_model(filepath=path)      # load the HDF5 model (remember to add the full path to the file)
     # print("model loaded")
+    
+    input_arr = np.asarray(input).reshape((1,9))        # reshape the input tuple
+    # print("input successfully reshaped")
     
     prediction = model.predict(input_arr).flatten()     # make the prediction
     # print("prediction made")
