@@ -37,7 +37,7 @@ To find Python.h and include directories:
 python-config --include
 ```	
 
-Resulting output:
+Resulting output (should be similar):
 ```
 -iwithsysroot /System/Library/Frameworks/Python.framework/Versions/2.7/include/python2.7 -iwithsysroot /System/Library/Frameworks/Python.framework/Versions/2.7/include/python2.7
 ```
@@ -47,7 +47,7 @@ To find linker directories, type in the following commands in terminal:
 python-config --ldflags
 ```
 
-Resulting output:
+Resulting output (should be similar):
 ```
 -L/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/config -lpython2.7 -ldl -framework CoreFoundation
 ```
