@@ -7,7 +7,7 @@ make all
 
 To save model in python...
 
-1. Use the command keras.model.save(<name of file>.h5) to save the entire model as an HDF5 file
+1. Use the command keras.model.save(model_name.h5) to save the entire model as an HDF5 file
 
 2. Put the HDF into the deployment_file/python folder
 
