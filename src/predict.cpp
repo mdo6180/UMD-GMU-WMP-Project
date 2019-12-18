@@ -7,7 +7,7 @@ PyObject* pFunc = NULL;
 PyObject* pArgTuple = NULL;
 PyObject* pArg = NULL;
 
-// calls the python function to make the prediction
+// formats the input vector, calls the python function to make the prediction,
 // and returns the result of the python function call as a double
 double predict(std::vector<double>& args){
     

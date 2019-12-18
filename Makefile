@@ -4,7 +4,7 @@
 # clang++ for compiling on MacOS
 # Visual C++ for compiling on Windows
 #-----------------------------------------------------------------------------
-CXX   = g++
+CXX = g++
 OPTS = -O0
 DEBUG = -g -std=c++14
 
@@ -44,6 +44,7 @@ LIB_python2 = -lpython2.7
 INCLUDE = $(addprefix -I,$(INCDIR)) $(INCLUDE_python3) 
 LINK = $(LIB_DIR_python3) $(LIB_python3)
 OBJS=${SRCS:$(SRCDIR)/%.cpp=$(OBJDIR)/%.o}
+
 CXX_FLAGS = $(OPTS) $(INCLUDE) $(DEBUG) $(LINK)
 
 #--------------------------------------------------------------------
