@@ -1,7 +1,9 @@
 Clone repository off of GitHub
-$ git clone https://github.com/mdo6180/UMD-GMU-WMP-Project
-$ make cleanall
-$ make all
+```
+git clone https://github.com/mdo6180/UMD-GMU-WMP-Project
+make cleanall
+make all
+```
 
 To save model in python...
 
@@ -15,18 +17,26 @@ Once you have saved and exported your model as a .h5 file...
 
 2. Find the include and linker directories
 
-To find numpy headers:
-	In terminal:
-	$ Python
-	>>> import numpy as np
-	>>> np.get_include()
-	'/System/Library/Frameworks/Python.framework/Versions/2.7/Extras/lib/python/numpy/core/include'
+To find numpy headers, type in the following commands in terminal:
+```
+Python
+>> import numpy as np
+>> np.get_include()
+```
+
+Resulting output should be a path to your numpy headers
+```
+'/System/Library/Frameworks/Python.framework/Versions/2.7/Extras/lib/python/numpy/core/include'
+```
 
 To find Python.h and include directories:
-	In terminal:
-	$ python-config --include
-	-iwithsysroot /System/Library/Frameworks/Python.framework/Versions/2.7/include/python2.7 -iwithsysroot /System/Library/Frameworks/Python.framework/Versions/2.7/include/python2.7
-	
+```
+python-config --include
+```	
+Resulting output:
+```
+-iwithsysroot /System/Library/Frameworks/Python.framework/Versions/2.7/include/python2.7 -iwithsysroot /System/Library/Frameworks/Python.framework/Versions/2.7/include/python2.7
+```
 
 To find linker directories:
 	In terminal:
