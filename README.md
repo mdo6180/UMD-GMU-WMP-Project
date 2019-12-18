@@ -36,6 +36,7 @@ To find Python.h and include directories:
 ```
 python-config --include
 ```	
+
 Resulting output:
 ```
 -iwithsysroot /System/Library/Frameworks/Python.framework/Versions/2.7/include/python2.7 -iwithsysroot /System/Library/Frameworks/Python.framework/Versions/2.7/include/python2.7
@@ -62,7 +63,7 @@ all: <filename>.cpp
 ```
 4. Go into the load_model.py file and edit the filename variable to the name of your .h5 file
 
-5. make sure that #include "predict.h" is located at the top of every .cpp file that needs to use the saved model to make predictions
+5. Make sure that #include "predict.h" is located at the top of every .cpp file that needs to use the saved model to make predictions
 
 6. Make sure that the second argument in the setenv() command in predict.cpp is set to the directory containing the load_model.py file 
 
